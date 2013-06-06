@@ -7,6 +7,9 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
+gem 'dynamic_form'
+
+gem 'figaro'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +21,18 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'zurb-foundation'
 end
+
+group :development do
+  gem 'rspec-rails', '~> 2.13'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl', '2.6.4'
+end
+
 
 gem 'jquery-rails'
 
