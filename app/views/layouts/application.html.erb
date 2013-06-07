@@ -29,11 +29,12 @@
           <%= value %>
         </div>
         <% end %>
+        <%= render 'layouts/nav' %>
         <%= yield %>
       </div>
     </div>
 
-    
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
