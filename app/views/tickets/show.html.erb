@@ -1,4 +1,4 @@
 <h2>Ticket</h2>
 <h4><%= @ticket.issue %></h4>
 <p><%= @ticket.description %></p></br>
-<p>at <%= @ticket.created_at %></p>
+<p>Created <%= timeago_tag @ticket.created_at %></p>

@@ -1,2 +1,7 @@
 <h2>Help Desk Tickets</h2>
+<ul>
+  <% @tickets.each do |ticket| %>
+   <li><%= link_to ticket.issue, ticket_path(ticket) %></li>
+  <% end %>
+</ul>
 <%= link_to "New Ticket", new_ticket_path, :class => "button" %>
